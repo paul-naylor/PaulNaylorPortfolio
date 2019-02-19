@@ -1,2 +1,137 @@
-body{background:lightcyan
+/* ---- reset ---- */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  img:hover{
+    opacity: 0.5;
+        -moz-box-shadow:    3px 3px 5px 6px #ccc;
+        -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+        box-shadow:         2px 2px 6px 1px #000;
+    }
+
+
+  /* ---- typography ---- */
+  
+  body {
+    color: #111;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 147%;
+  }
+  
+  h1 {}
+  
+  h2 {}
+  
+  h3 {}
+
+  a{
+    color: darkgray;
+    text-decoration: none
 }
+
+a:hover{
+color: lightgray;
+}
+
+  /* ---- layout ---- */
+
+  .main-footer {
+    color: white;
+    padding: 60px 0;
+    background: #111;
+  }
+  
+  .container {
+    margin: 0 20px;
+    max-width: 960px;
+    border: 1px solid black;
+
+  }
+  
+  section {
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+section:nth-of-type(even){
+  background: lightblue
+}
+
+.main-navigation ul li{
+    display:inline-block
+}
+
+.inline-list li{
+    display: inline-block;
+}
+
+.portfolio-list li{
+    width: 60%
+}
+  
+  /* ---- components ---- */
+  
+  .page-header {
+    background: darkcyan;
+    color: whitesmoke
+  
+  }
+
+  .page-header a:hover{
+    color: aquamarine
+}
+
+/*header*/
+
+.page-header h1{
+  font-size: 1em
+}
+  
+
+  /* ---- section ---- */
+  
+  section#portfolio {
+    // ...
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+  
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .page-header {
+        background: black;
+        color: whitesmoke
+      
+      }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+      .container{
+          margin: 0 auto;
+      }
+      .page-header h1{
+        font-size: 3em
+      }
+  
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+  
+  }
+
+
+
+
+
+
+

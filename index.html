@@ -12,30 +12,32 @@
 </head>
 
 <body>
-    <header>
-        <!-- Start Header Section -->
-        <h1>
-            <a href="#">Paul Naylor</a>
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#background">Background</a></li>
-                <li><a href="#skills">Skills & Experience</a></li>
-                <li><a href="#friends">Friends</a></li>
-                <li><a href="#connect">Connect</a></li>
-            </ul>
-        </nav>
+    <!-- Start Header Section -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Paul Naylor</h1>
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#background">Background</a></li>
+                    <li><a href="#skills">Skills & Experience</a></li>
+                    <li><a href="#friends">Friends</a></li>
+                    <li><a href="#connect">Connect</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <!--Main Content-->
         <section id="about">
-            <h3>About Me</h3>
-            <p>UI/UX Designer based in Barcelona</p>
-            <figure>
-                <img src="Assets/images/ThugCat.gif" alt="ThugCat">
-            </figure>
+            <div class="container">
+                <h3>About Me</h3>
+                <p>UI/UX Designer based in Barcelona</p>
+                <figure>
+                    <img src="Assets/images/ThugCat.gif" alt="ThugCat">
+                </figure>
+            </div>
         </section>
         <section id="portfolio">
             <!--Start Portfolio Section-->
@@ -44,7 +46,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolores voluptates error velit,
                     nulla obcaecati numquam suscipit in a quas perspiciatis soluta quo eius ducimus adipisci? Sit,
                     doloremque sunt. Temporibus?</p>
-                <ul>
+                <ul class="inline-list portfolio-list">
                     <li>
                         <a href="#">
                             <h4>Final Project</h4>
@@ -80,31 +82,37 @@
         </section>
         <section id="background">
             <!--This is the background section-->
-            <h3>Background</h3>
-            <p>My background is: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos maxime id facilis
-                dolore error fuga veritatis architecto, esse ducimus neque dicta sapiente rerum earum. Iure, quisquam
-                amet! Perferendis, voluptatem odio?</p>
+            <div class="container">
+                <h3>Background</h3>
+                <p>My background is: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos maxime id
+                    facilis
+                    dolore error fuga veritatis architecto, esse ducimus neque dicta sapiente rerum earum. Iure,
+                    quisquam
+                    amet! Perferendis, voluptatem odio?</p>
+            </div>
         </section>
         <section id="skills">
             <!--This is the Skills & Exeperience section-->
-            <h3>Skills and Experience</h3>
-            <p>My Skills are:</p>
-            <UL>
-                <LI>Design Thinking</LI>
-                <LI>UX Research</LI>
-                <LI>Prototyping</LI>
-                <LI>Ideation</LI>
-                <LI>Sketch</LI>
-                <li>InVision</li>
-                <li>Principle</li>
-            </UL>
+            <div class="container">
+                <h3>Skills and Experience</h3>
+                <p>My Skills are:</p>
+                <UL>
+                    <LI>Design Thinking</LI>
+                    <LI>UX Research</LI>
+                    <LI>Prototyping</LI>
+                    <LI>Ideation</LI>
+                    <LI>Sketch</LI>
+                    <li>InVision</li>
+                    <li>Principle</li>
+                </UL>
+            </div>
         </section>
         <section id="friends">
             <!--This is the friends section-->
             <div class="container">
                 <h3>Friends</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, explicabo.</p>
-                <ul>
+                <ul class="inline-list">
                     <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
@@ -117,18 +125,22 @@
             <div class="container">
                 <h3>Connect</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, architecto!</p>
-                <a href="mailto:paulnaylor@outlook.com">Email Me</a>
             </div>
         </section>
     </main>
-    <footer class="main-footer">
+    <footer id="main-footer">
         <!--page footer-->
-        <ul>
-            <Li><a href="#" target="_blank" rel="Title"><i class="fab fa-linkedin"></i></a></Li>
-            <Li><a href="#" target="_blank" rel="Title"><i class="fab fa-medium"></i></a></Li>
-            <Li><a href="#" target="_blank" rel="Title"><i class="fab fa-twitter-square"></i></a></Li>
-        </ul>
-        <p>Paul Naylor © 2019</p>
+        <div class="container">
+            <section>
+            <ul class="inline-list">
+                <li><a href="mailto:paulnaylor@outlook.com" target="_blank" rel="@"><i class="fas fa-envelope"></i></a></li>
+                <Li><a href="#" target="_blank" rel="#"><i class="fab fa-linkedin"></i></a></Li>
+                <Li><a href="#" target="_blank" rel="#"><i class="fab fa-medium"></i></a></Li>
+                <Li><a href="#" target="_blank" rel="#"><i class="fab fa-twitter-square"></i></a></Li>
+            </ul>
+            <p>Paul Naylor © 2019</p>
+        </section>
+        </div>
     </footer>
 </body>
 
