@@ -6,6 +6,12 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+
+  /* Element Styles */
+
+  img {
+    max-width: 100%;
+  }
   
   img:hover{
     opacity: 0.5;
@@ -19,7 +25,7 @@ html {
   
   body {
     color: #111;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 147%;
   }
@@ -28,10 +34,28 @@ html {
   
   h2 {}
   
-  h3 {}
+  h3 {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    padding: 10px 0px 10px 0px;
+    text-align: left;
+    line-height: 1em;
+  }
+
+
+  h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    padding: 30px;
+    text-align: center;
+    line-height: 1em;
+  }
 
   a{
-    color: darkgray;
+    color: white;
     text-decoration: none
 }
 
@@ -49,18 +73,17 @@ color: lightgray;
   
   .container {
     margin: 0 20px;
-    max-width: 960px;
-    border: 1px solid black;
-
+    max-width: 90%;
   }
   
   section {
     margin-bottom: 20px;
     padding-top: 20px;
   }
-section:nth-of-type(even){
+
+/* section:nth-of-type(even){
   background: lightblue
-}
+} */
 
 .main-navigation ul li{
     display:inline-block
@@ -76,24 +99,115 @@ section:nth-of-type(even){
   
   /* ---- components ---- */
   
-  .page-header {
-    background: darkcyan;
-    color: whitesmoke
-  
-  }
-
-  .page-header a:hover{
-    color: aquamarine
-}
-
 /*header*/
 
+.page-header {
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;  
+}
+
 .page-header h1{
-  font-size: 1em
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
   
+.page-header a{
+  color: slategray;
+  padding: 5px 10px;
+}
 
+.pàge-header a:hover{
+
+}
+
+/* Main */
+
+/* Banner */
+
+.banner {
+  height: 100vh;
+  color:  white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    background: url('../images/Macbook.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.banner h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 2.5em;
+  line-height: 2em;
+
+}
+
+.banner h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1em;
+
+}
+
+/* Portfolio Section */
+
+.flex-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-list li{
+  flex-basis: 100%;
+  position: relative;
+}
+
+.portfolio-title {
+  position: absolute;
+  left: 50%;
+  Top: 50%;
+  border: 2px solid white;
+  transform: translate(-50%, -50%);
+
+}
+
+
+/* footer */
+
+.main-footer {
+  background: white;
+  color: black;
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 20px 30px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+}
   /* ---- section ---- */
+
+.section-intro {
+  text-align: center;
+  max-width: 9  0%;
+  margin: 0 auto 30px;
+}
   
   section#portfolio {
     // ...
@@ -101,26 +215,28 @@ section:nth-of-type(even){
   
   /* Small devices (landscape phones, 576px and up) */
   @media (min-width: 576px) {
-  
-  }
-  
+    .section-intro {
+      text-align: center;
+      max-width: 90%;
+      margin: 0 auto 30px;
+    }
+
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) {
-    .page-header {
-        background: black;
-        color: whitesmoke
-      
-      }
+    
+    .flex-list li {
+      flex-basis: 50%;
+    }
+
   }
+
   
   /* Large devices (desktops, 992px and up) */
   @media (min-width: 992px) {
       .container{
           margin: 0 auto;
       }
-      .page-header h1{
-        font-size: 3em
-      }
+      
   
   }
   
