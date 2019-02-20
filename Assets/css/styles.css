@@ -55,7 +55,7 @@ html {
   }
 
   a{
-    color: white;
+    color: slategrey;
     text-decoration: none
 }
 
@@ -122,7 +122,7 @@ color: lightgray;
 }
   
 .page-header a{
-  color: slategray;
+  color:black;
   padding: 5px 10px;
 }
 
@@ -185,6 +185,21 @@ color: lightgray;
 
 }
 
+/* Grid */
+.grid-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 10px;
+}
+
+
+.grid-list li{
+position: relative;
+
+}
+.grid-list img{
+  display: block;
+}
 
 /* footer */
 
