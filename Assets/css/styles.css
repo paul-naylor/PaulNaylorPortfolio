@@ -63,6 +63,11 @@ a:hover{
 color: lightgray;
 }
 
+.portfolio-link{
+  color:white
+}
+
+
   /* ---- layout ---- */
 
   .main-footer {
@@ -107,11 +112,11 @@ color: white;
 font-weight: 500;
 padding: 2em;
 border-radius: 4px;
-transition: all .5s ease;
+/* transition: all .5s ease;
 animation-name: blink;
 animation-duration: .4s;
 animation-direction: alternate;
-animation-iteration-count: infinite;
+animation-iteration-count: infinite; */
 }
 
 .btn:hover{
@@ -121,7 +126,6 @@ animation-iteration-count: infinite;
 
 }
 
-
   /*header*/
 
 .page-header {
@@ -129,7 +133,7 @@ animation-iteration-count: infinite;
   color: black;
   display: flex;
   justify-content: space-between;
-  padding: 20px 30px;
+  padding: 1px 30px;
   align-items: center;
   position: fixed;
   top: 0;
@@ -143,15 +147,35 @@ animation-iteration-count: infinite;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
+
+.main-navigation{
+  opacity: 1;
+  transition: opacity 2s ease-in;
+  height: 70px;
+
+  }
+  .main-navigation-list{
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .main-navigation-list *{
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
   
 .page-header a{
   color:black;
   padding: 5px 10px;
 }
 
-.pàge-header a:hover{
-  transition: color 1s ease-in-out;
-  color: red;
+.page-header a:hover{
+  transition: all .3s ease-in-out;
+  background: slategrey;
+  color: white;
+
 }
 
 /* Main */
@@ -182,10 +206,7 @@ animation-iteration-count: infinite;
   animation-delay: 1s;
 }
 
-.main-navigation{
-opacity: 1;
-transition: opacity 2s ease-in;
-}
+
 
 .banner h2{
   font-family: 'Montserrat', sans-serif;
@@ -216,13 +237,12 @@ transition: opacity 2s ease-in;
 
 }
 
-/* Grid */
+/* Portfolio Grid */
 .grid-list{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-gap: 10px;
 }
-
 
 .grid-list li{
 position: relative;
@@ -232,40 +252,103 @@ position: relative;
   display: block;
 }
 
+/* Background */
+
+
+
+/* Skills */
+
+.grid-skills{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr
+}
+
+.skills-list{
+list-style-type: square;
+}
+
+/* Friends */
+
+/* Connect */
+
+#connect{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
 /* footer */
 
-.main-footer {
-  background: white;
+footer {
+  background:white;
   color: black;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   padding: 20px 30px;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
 }
+
+/* .footer-icons{
+display: flex;
+flex-basis: 25%;
+justify-content: left
 }
+
+.footer-text{
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center
+  }
+
+.footer-copyright{
+    display: flex;
+    flex-basis: 25%;
+    justify-content: right;
+    } */
+
+
+
+/* video */
+
+.videos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-wrapper {
+  width: 100%;
+  position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
   /* ---- section ---- */
 
 .section-intro {
-  text-align: center;
-  max-width: 9  0%;
-  margin: 0 auto 30px;
+  text-align: left;
+  max-width: 100%;
+  margin: 5px auto 30px;
 }
   
   section#portfolio {
     // ...
   }
   
-  /* Small devices (landscape phones, 576px and up) */
-  @media (min-width: 576px) {
-    .section-intro {
-      text-align: center;
-      max-width: 90%;
-      margin: 0 auto 30px;
-    }
+  /* Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {} */
+   
 
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) {
@@ -274,7 +357,6 @@ position: relative;
       flex-basis: 50%;
     }
 
-  }
 
   
   /* Large devices (desktops, 992px and up) */
@@ -282,6 +364,8 @@ position: relative;
       .container{
           margin: 0 auto;
       }
+   
+    
       
   
   }

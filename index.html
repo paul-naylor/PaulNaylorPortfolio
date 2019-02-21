@@ -20,7 +20,7 @@
     <header class="page-header">
         <h1>Paul Naylor</h1>
         <nav class="main-navigation">
-            <ul>
+            <ul class="main-navigation-list">
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#background">Background</a></li>
@@ -37,7 +37,7 @@
             <h2>UX Designer</h2>
         </section>
 
-        <section id="about">
+        <section id="about" data-aos="fade-in" data-aos-duration="1000">
             <div class="container">
                 <h1>Paul Naylor</h1>
                 <p class="section-intro">UI/UX Designer based in Barcelona. Lorem ipsum dolor sit amet consectetur
@@ -104,16 +104,14 @@
         </section> -->
 
         <!--Start Portfolio Grid Section-->
-        <section id="portfolio">
+
+        <section class="portfolio" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+            <div class="hidden-anchor" id="portfolio" />
             <div class="container">
                 <h3>Portfolio</h3>
-                <!-- <p class="section-intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolores
-            voluptates error velit,
-            nulla obcaecati numquam suscipit in a quas perspiciatis soluta quo eius ducimus adipisci? Sit,
-            doloremque sunt. Temporibus?</p> -->
                 <ul class="grid-list">
-                    <li>
-                        <a href="#">
+                    <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+                        <a class="portfolio-link" href="#">
                             <img src="Assets/images/Placeholder.jpg" alt="Final Project Image">
                             <div class="portfolio-title">
                                 <h4>Final Project</h4>
@@ -123,8 +121,8 @@
 
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        <a class="portfolio-link" href="#">
                             <img src="Assets/images/Placeholder.jpg" alt="Final Project Image">
                             <div class="portfolio-title">
                                 <h4>HR Web App</h4>
@@ -134,8 +132,8 @@
 
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                        <a class="portfolio-link" href="#">
                             <img src="Assets/images/Placeholder.jpg" alt="Final Project Image">
                             <div class="portfolio-title">
                                 <h4>Add a Feature</h4>
@@ -144,8 +142,8 @@
                             </div>
 
                         </a>
-                    <li>
-                        <a href="#">
+                    <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <a class="portfolio-link" href="#">
                             <img src="Assets/images/Placeholder.jpg" alt="Final Project Image">
                             <div class="portfolio-title">
                                 <h4>Intellectual Wellness</h4>
@@ -160,7 +158,7 @@
         </section>
 
         <!--This is the background section-->
-        <section id="background">
+        <section id="background" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
             <div class="container">
                 <h3>Background</h3>
                 <p class="section-intro">My background is: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -173,10 +171,10 @@
         </section>
 
         <!--This is the Skills & Exeperience section-->
-        <section id="skills">
-            <div class="container">
+        <section id="skills" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+            <div class="container grid-skills">
                 <h3>Skills and Experience</h3>
-                <UL>
+                <UL class="skills-list">
                     <LI>Design Thinking</LI>
                     <LI>UX Research</LI>
                     <LI>Prototyping</LI>
@@ -189,7 +187,7 @@
         </section>
 
         <!--This is the friends section-->
-        <section id="friends">
+        <section id="friends" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
             <div class="container">
                 <h3>Friends</h3>
                 <p class="section-intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, explicabo.</p>
@@ -202,41 +200,41 @@
                 </ul>
             </div>
         </section>
-        <section id="connect">
+
+        <!-- This is the connect section -->
+        <section id="connect" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
             <div class="container">
                 <h3>Connect</h3>
-                <p class="section-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, architecto!</p>
+                <p class="section-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, architecto!
+                </p>
                 <a class="btn" href="mailto:hello@email.com">Email Me</a>
             </div>
     </main>
 
     <!--page footer-->
-    <footer id="main-footer">
-        <section>
-            <div class="container">
-                <ul class="inline-list">
-                    <li><a href="mailto:paulnaylor@outlook.com" target="_blank" rel="@"><i
-                                class="fas fa-envelope"></i></a>
-                    </li>
-                    <Li><a href="#" target="_blank" rel="#"><i class="fab fa-linkedin"></i></a></Li>
-                    <Li><a href="#" target="_blank" rel="#"><i class="fab fa-medium"></i></a></Li>
-                    <Li><a href="#" target="_blank" rel="#"><i class="fab fa-twitter-square"></i></a></Li>
-                </ul>
-            </div>
-            <div class="container">
-                <ul class="inline-list">
-                    <li><a href="mailto:paulnaylor@outlook.com">Email |</a>
-                    </li>
-                    <Li><a href="#">LinkedIn |</a></Li>
-                    <Li><a href="#">Medium |</a></Li>
-                    <Li><a href="#">Twitter |</a></Li>
-                </ul>
-            </div>
-        </section>
-        <div class="container">
+    <footer>
+        <div class="footer-copyright">
             <p>Paul Naylor © 2019</p>
         </div>
+
+        <div class="footer-text">
+            <ul class="inline-list">
+                <li><a href="mailto:paulnaylor@outlook.com">Email |</a></li>
+                <Li><a href="#">LinkedIn |</a></Li>
+                <Li><a href="#">Medium |</a></Li>
+                <Li><a href="#">Twitter</a></Li>
+            </ul>
+        </div>
+
+
+
     </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
