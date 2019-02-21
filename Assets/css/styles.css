@@ -99,7 +99,30 @@ color: lightgray;
   
   /* ---- components ---- */
   
-/*header*/
+/* Button */
+.btn{
+display: inline-block;
+background: black;
+color: white;
+font-weight: 500;
+padding: 2em;
+border-radius: 4px;
+transition: all .5s ease;
+animation-name: blink;
+animation-duration: .4s;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+}
+
+.btn:hover{
+  background: slategray;
+  color: orangered;
+  /* transition: all .5s ease; */
+
+}
+
+
+  /*header*/
 
 .page-header {
   background: white;
@@ -127,7 +150,8 @@ color: lightgray;
 }
 
 .pàge-header a:hover{
-
+  transition: color 1s ease-in-out;
+  color: red;
 }
 
 /* Main */
@@ -153,7 +177,11 @@ color: lightgray;
   font-weight: 500;
   font-size: 2.5em;
   line-height: 2em;
+}
 
+.banner h1, .banner h2{
+opacity: 1;
+transition: opacity 2s ease-in;
 }
 
 .banner h2{
@@ -261,8 +289,26 @@ position: relative;
   }
 
 
+/* Animate function */
 
+@keyframes blink {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
 
+}
 
+@keyframes bounce {
+  0%{
 
+  }
+  60%{
 
+  }
+  100%{
+    
+  }
+}
