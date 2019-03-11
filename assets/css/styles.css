@@ -14,7 +14,7 @@ html {
   }
   
   img:hover{
-    opacity: 0.5;
+    opacity: 0.8;
         -moz-box-shadow:    3px 3px 5px 6px #ccc;
         -webkit-box-shadow: 3px 3px 5px 6px #ccc;
         box-shadow:         2px 2px 6px 1px #000;
@@ -30,7 +30,15 @@ html {
     line-height: 147%;
   }
   
-  h1 {}
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    padding: 10px 0px 10px 0px;
+    text-align: left;
+    line-height: 1em;
+
+  }
   
   h2 {}
   
@@ -65,6 +73,11 @@ color: lightgray;
 
 .portfolio-link{
   color:white
+}
+
+.bullet_list{
+  list-style-type: square;
+  list-style-position: inside;
 }
 
 
@@ -287,6 +300,12 @@ footer {
   align-items: center;
   width: 100%;
 }
+
+.contact-text{
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center
+  }
 
 /* .footer-icons{
 display: flex;
